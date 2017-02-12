@@ -12,8 +12,10 @@
 [Data modeling](https://dev.mysql.com/doc/workbench/en/wb-data-modeling.html)<br>
 [Reverse engineering](https://dev.mysql.com/doc/workbench/en/wb-reverse-engineer-live.html)
 ###MYSQL TUTORIAL
-[MySQL Tutorial](http://www.mysqltutorial.org/basic-mysql-tutorial.aspx)
-###W3SCHOOLS.COM
+[MySQL Tutorial](http://www.mysqltutorial.org/basic-mysql-tutorial.aspx)<br>
+[MySQL Cascade](http://www.mysqltutorial.org/mysql-on-delete-cascade/)<br>
+[MYSQL Data types](https://www.tutorialspoint.com/mysql/mysql-data-types.htm)
+###SQL TUTORIAL
 [SQL Tutorial](http://www.w3schools.com/sql/default.asp) 
 ###WIKIPEDIA SQL
 [Wikipedia SQL](https://en.wikipedia.org/wiki/SQL)
