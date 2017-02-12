@@ -1,10 +1,33 @@
 #DATABASE
 ##PLAN
-###DAY 1 (MONDAY): MYSQL WORKBENCH / SCRIPTING
-###DAY 2 (TUESDAY): SQL QUERIES
-###DAY 3 (WEDNESDAY): DATABASE DESIGN
-###DAY 4 (THURSDAY): NORMALIZATION / OPTIMIZATION
-###DAY 5 (FRIDAY): STUDY POINT ASSIGNMENT
+###Learning objectives
+- Convert domain model to database model
+- Use visual database tool
+- Query database
+- Manipulate database
+- Set up database
+- Normalize database
+- Connect to database with JDBC
+
+####DAY 1 (MONDAY): MYSQL WORKBENCH / SCRIPTING
+From business to database  
+Different types of data models  
+Transform logical data models into physical data models  
+Conceptual model / Logical model / Physical model  
+
+Concepts / Terms  
+
+Scripts  
+Model to script <-> Script to model  
+Backup database  
+Test database  
+
+SQL / Data query (DQL)  
+  SELECT / ORDER BY / FUNCTIONS / GROUP BY  
+####DAY 2 (TUESDAY): SQL QUERIES
+####DAY 3 (WEDNESDAY): DATABASE DESIGN
+####DAY 4 (THURSDAY): NORMALIZATION / OPTIMIZATION
+####DAY 5 (FRIDAY): STUDY POINT ASSIGNMENT
 
 ##LITTERATURE
 ###MYSQL WORKBENCH
