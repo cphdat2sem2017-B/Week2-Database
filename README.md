@@ -17,7 +17,7 @@ Conceptual model / Logical model / Physical model
 
 Concepts / Terms  
 
-Scripts  
+Scripting  
 Model to script <-> Script to model  
 Backup database  
 Test database  
