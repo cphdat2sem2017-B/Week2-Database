@@ -23,7 +23,8 @@ Backup database
 Test database  
 
 SQL / Data query (DQL)  
-	SELECT / ORDER BY / FUNCTIONS / GROUP BY  
+&nbsp;&nbsp;&nbsp;&nbsp;
+SELECT / ORDER BY / FUNCTIONS / GROUP BY  
 ####DAY 2 (TUESDAY): SQL QUERIES
 ####DAY 3 (WEDNESDAY): DATABASE DESIGN
 ####DAY 4 (THURSDAY): NORMALIZATION / OPTIMIZATION
