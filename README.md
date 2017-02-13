@@ -28,6 +28,9 @@ SQL / Data query (DQL)
 ####DAY 3 (WEDNESDAY): DATABASE DESIGN
 We are going to design a database from scratch using DDL. We will look at how to enforce referential entegrity using foreign keys and junction tables. Ww will also look at other types of database constraints we can use.
 
+[Readings](https://www.tutorialspoint.com/sql/sql-constraints.htm)
+[Exercises](Exercises/DDLexercise.md)
+
 ####DAY 4 (THURSDAY): NORMALIZATION / OPTIMIZATION
 ####DAY 5 (FRIDAY): STUDY POINT ASSIGNMENT
 
