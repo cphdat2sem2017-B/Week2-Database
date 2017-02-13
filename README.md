@@ -26,6 +26,8 @@ SQL / Data query (DQL)
 &nbsp;&nbsp;&nbsp;&nbsp;SELECT / ORDER BY / FUNCTIONS / GROUP BY  
 ####DAY 2 (TUESDAY): SQL QUERIES
 ####DAY 3 (WEDNESDAY): DATABASE DESIGN
+We are going to design a database from scratch using DDL. We will look at how to enforce referential entegrity using foreign keys and junction tables. Ww will also look at other types of database constraints we can use.
+
 ####DAY 4 (THURSDAY): NORMALIZATION / OPTIMIZATION
 ####DAY 5 (FRIDAY): STUDY POINT ASSIGNMENT
 
