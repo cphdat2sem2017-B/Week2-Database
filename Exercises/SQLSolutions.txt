@@ -1,0 +1,110 @@
+SELECT (ONE)
+/* 1 */
+select *
+from customers
+where country = 'France';
+
+/* 2 */
+select firstName, lastName
+from employees
+where jobTitle = 'Sales Rep';
+
+/* 3 */
+select productName, productDescription
+from products
+where MSRP between 50 and 100;
+
+/* 4 */
+select customerNumber
+from orders
+where status = 'Cancelled';
+
+/* 5 */
+select productLine, productVendor
+from products
+where productScale = '1:18';
+
+ORDER BY
+/* 1 */
+select *
+from products
+where productLine = 'Motorcycles'
+order by productName;
+
+/* 2 */
+select *
+from products
+where quantityInStock < 1000
+order by quantityInStock;
+
+/* 3 */
+select customerName, contactFirstName, contactLastName
+from customers
+where country = 'Norway'
+order by contactFirstName;
+
+/* 3 */
+select customerName, concat(contactFirstName, ' ', contactLastName) as contactName
+from customers
+where country = 'Norway'
+order by contactFirstName;
+
+FUNCTIONS
+/* 1 */
+select count(*)
+from customers
+where country = 'Germany';
+
+/* 2 */
+select avg(buyPrice)
+from products
+where productLine = 'Classic Cars';
+
+/* 2 */
+select avg(MSRP)
+from products
+where productLine = 'Classic Cars';
+
+/* 3 */
+select max(buyPrice)
+from products
+where productVendor = 'Autoart Studio Design';
+
+/* 4 */
+select count(distinct country)
+from customers;
+
+/* 5 */ 
+select sum(quantityInStock)
+from products
+where productScale = '1:12';
+
+/* 6 */
+select max(MSRP-buyPrice)
+from products;
+
+GROUP BY
+/* 1 */
+select productLine, avg(MSRP)
+from products
+group by productLine;
+
+/* 2 */
+select productVendor, count(productCode)
+from products
+group by productVendor;
+
+/* 3 */
+select productScale, avg( (MSRP - buyPrice)/buyPrice ) * 100 as pctProfit
+from products
+group by productScale;
+
+/* 4 */
+select status, count(*)
+from orders
+group by status;
+
+/* 5 */
+select customerNumber, count(*)
+from orders
+group by customerNumber;

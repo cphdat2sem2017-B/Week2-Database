@@ -25,6 +25,24 @@ Test database
 SQL / Data query (DQL)  
 &nbsp;&nbsp;&nbsp;&nbsp;SELECT / ORDER BY / FUNCTIONS / GROUP BY  
 ####DAY 2 (TUESDAY): SQL QUERIES
+SELECT / DISTINCT / WHERE / ORDER BY / FUNCTIONS / GROUP BY
+
+Not case sensitive
+Semicolon ends statement
+Temporary tables
+* / ColumnNames
+=, <>, >, <, >=, <=, BETWEEN, LIKE, IN, NOT
+Wildcards
+Aliases / AS
+Concat
+
+INSERT
+UPDATE
+DELETE
+&nbsp;&nbsp;&nbsp;&nbsp;CASCADE
+&nbsp;&nbsp;&nbsp;&nbsp;Alter table -> Foreign keys -> Foreign key option
+JOIN
+
 ####DAY 3 (WEDNESDAY): DATABASE DESIGN
 We are going to design a database from scratch using DDL. We will look at how to enforce referential entegrity using foreign keys and junction tables. Ww will also look at other types of database constraints we can use.
 
