@@ -28,8 +28,8 @@ SQL / Data query (DQL)
 Temporary tables / ColumnNames / * / Aliases / AS / Concat<br>
 =, <>, >, <, >=, <=, BETWEEN, LIKE (Wildcards), IN, NOT<br>
 
-SQL / Data Manipulation (DML) 
-INSERT / UPDATE / DELETE (Cascade)<br>
+SQL / Data Manipulation (DML) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;INSERT / UPDATE / DELETE (Cascade)<br>
 JOIN
 
 ####DAY 3 (WEDNESDAY): DATABASE DESIGN
