@@ -28,9 +28,9 @@ SQL / Data query (DQL)
 Temporary tables / ColumnNames / * / Aliases / AS / Concat<br>
 =, <>, >, <, >=, <=, BETWEEN, LIKE (Wildcards), IN, NOT<br>
 
-INSERT / UPDATE / DELETE
-&nbsp;&nbsp;&nbsp;&nbsp;CASCADE
-&nbsp;&nbsp;&nbsp;&nbsp;Alter table -> Foreign keys -> Foreign key option
+INSERT / UPDATE / DELETE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;CASCADE<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Alter table -> Foreign keys -> Foreign key option<br>
 JOIN
 
 ####DAY 3 (WEDNESDAY): DATABASE DESIGN
