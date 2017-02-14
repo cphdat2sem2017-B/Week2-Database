@@ -1,0 +1,12 @@
+/* 1 */
+SELECT customerNumber AS custNumb, customerName, CONCAT(city,', ',city) AS doublecity, CONCAT(creditLimit,'kroner') AS credit FROM classicmodels.customers 
+WHERE ((creditLimit NOT BETWEEN 80000 AND 100000) OR customerName LIKE '%gifts%') AND city NOT IN ('NYC', 'Brickhaven')
+GROUP BY doublecity
+ORDER BY creditLimit DESC, customerName ASC;
+
+/* 2 */
+SELECT customerNumber, customerName, creditLimit FROM customers WHERE creditLimit = (SELECT MIN(creditLimit) FROM customers)
+
+/* 3 */
+SELECT *, COUNT(customerNumber) AS NumberOfOrders FROM classicmodels.orders 
+GROUP BY customerNumber
