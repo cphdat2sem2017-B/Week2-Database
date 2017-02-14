@@ -23,22 +23,16 @@ Backup database
 Test database  
 
 SQL / Data query (DQL)  
-&nbsp;&nbsp;&nbsp;&nbsp;SELECT / ORDER BY / FUNCTIONS / GROUP BY  
+&nbsp;&nbsp;&nbsp;&nbsp;SELECT / DISTINCT / WHERE/ ORDER BY / FUNCTIONS / GROUP BY  
 ####DAY 2 (TUESDAY): SQL QUERIES
-SELECT / DISTINCT / WHERE / ORDER BY / FUNCTIONS / GROUP BY
-
-Not case sensitive
-Semicolon ends statement
-Temporary tables
-* / ColumnNames
-=, <>, >, <, >=, <=, BETWEEN, LIKE, IN, NOT
+Not case sensitive<br>
+Semicolon ends statement<br>
+Temporary tables<br>
+ColumnNames / * / Aliases / AS / Concat<br>
+=, <>, >, <, >=, <=, BETWEEN, LIKE, IN, NOT<br>
 Wildcards
-Aliases / AS
-Concat
 
-INSERT
-UPDATE
-DELETE
+INSERT / UPDATE / DELETE
 &nbsp;&nbsp;&nbsp;&nbsp;CASCADE
 &nbsp;&nbsp;&nbsp;&nbsp;Alter table -> Foreign keys -> Foreign key option
 JOIN
