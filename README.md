@@ -20,7 +20,7 @@ Model to script <-> Script to model
 Backup database / Test database  
 
 SQL / Data query (DQL)  
-&nbsp;&nbsp;&nbsp;&nbsp;SELECT / DISTINCT / WHERE/ ORDER BY / FUNCTIONS / GROUP BY  
+&nbsp;&nbsp;&nbsp;&nbsp;SELECT / DISTINCT / WHERE / ORDER BY / FUNCTIONS / GROUP BY  
 ####DAY 2 (TUESDAY): SQL QUERIES
 Temporary tables / ColumnNames / * / Aliases / AS / Concat<br>
 =, <>, >, <, >=, <=, BETWEEN, LIKE (Wildcards), IN, NOT<br>
