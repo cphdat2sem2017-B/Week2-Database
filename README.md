@@ -11,16 +11,13 @@
 
 ####DAY 1 (MONDAY): MYSQL WORKBENCH / SCRIPTING
 From business to database  
-Different types of data models  
-Transform logical data models into physical data models  
 Conceptual model / Logical model / Physical model  
 
 Concepts / Terms  
 
 Scripting  
 Model to script <-> Script to model  
-Backup database  
-Test database  
+Backup database / Test database  
 
 SQL / Data query (DQL)  
 &nbsp;&nbsp;&nbsp;&nbsp;SELECT / DISTINCT / WHERE/ ORDER BY / FUNCTIONS / GROUP BY  
