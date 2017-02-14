@@ -25,12 +25,8 @@ Test database
 SQL / Data query (DQL)  
 &nbsp;&nbsp;&nbsp;&nbsp;SELECT / DISTINCT / WHERE/ ORDER BY / FUNCTIONS / GROUP BY  
 ####DAY 2 (TUESDAY): SQL QUERIES
-Not case sensitive<br>
-Semicolon ends statement<br>
-Temporary tables<br>
-ColumnNames / * / Aliases / AS / Concat<br>
-=, <>, >, <, >=, <=, BETWEEN, LIKE, IN, NOT<br>
-Wildcards
+Temporary tables / ColumnNames / * / Aliases / AS / Concat<br>
+=, <>, >, <, >=, <=, BETWEEN, LIKE (Wildcards), IN, NOT<br>
 
 INSERT / UPDATE / DELETE
 &nbsp;&nbsp;&nbsp;&nbsp;CASCADE
