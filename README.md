@@ -30,9 +30,56 @@ SQL / Data Manipulation (DML) <br>
 JOIN
 
 ####DAY 3 (WEDNESDAY): DATABASE DESIGN
-We are going to design a database from scratch using DDL. We will look at how to enforce referential entegrity using foreign keys and junction tables. We will also look at other types of database constraints we can use.
+We are going to design a database from scratch using DDL. We will look at how to enforce referential entegrity using foreign keys and junction tables. We will also look at other types of database constraints we can use.  
 
-[Readings](https://www.tutorialspoint.com/sql/sql-constraints.htm)
+**Userfull commands:**  
+`SELECT @@Global.sql_mode;`  
+`SET GLOBAL sql_mode = '<modes seperated by commas>';` 
+```CREATE DATABASE mydb  
+  DEFAULT CHARACTER SET utf8  
+  DEFAULT COLLATE utf8_general_ci;
+```  
+```ALTER TABLE <tablename>  
+ADD FOREIGN KEY (<collumn name in this table>)  
+REFERENCES <other table name>(<primary key collumn name in other table>)``` 
+ 
+
+**Constraints** 
+1. entity integrity (primary key constraint)
+2. referential integrity (foreign key)
+3. data
+	1. enum and set
+	2. invalid data
+		1. date format
+		2. not null  
+
+**Topics**  
+1. Create table
+2. Drop table if exists (Order of drop table statements in reverse)
+3. Alter table
+4. Composite primary key
+5. Foreign key constraints
+6. Circular references
+7. Creating a DDL script for the application
+8. Creating a MySql View
+
+**Circular reference example**  
+```Employees  
+    EmployeeID <PK>  
+    DepartmentID <FK> NOT NULL  
+Departments  
+    DepartmentID <PK>  
+    EmployeeID <FK> NOT NULL  
+```
+![](img/circularref.png)
+
+
+
+**Readings**  
+[Foreign key constraints](https://www.w3schools.com/sql/sql_foreignkey.asp)
+[SQL-constraints](https://www.tutorialspoint.com/sql/sql-constraints.htm)  
+[Mysql strict mode](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sql-mode-strict)  
+
 [Exercises](Exercises/DDLexercise.md)
 
 ####DAY 4 (THURSDAY): NORMALIZATION / OPTIMIZATION
