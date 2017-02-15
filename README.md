@@ -83,6 +83,8 @@ Departments
 [Exercises](Exercises/DDLexercise.md)
 
 ####DAY 4 (THURSDAY): NORMALIZATION / OPTIMIZATION
+#####Redundancy / Anomalies / Inconsistencies
+#####Normalization
 ####DAY 5 (FRIDAY): STUDY POINT ASSIGNMENT
 
 ##LITTERATURE
