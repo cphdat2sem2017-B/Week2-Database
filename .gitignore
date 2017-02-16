@@ -22,7 +22,6 @@ nbdist/
 *.ear
 
 # word #
-*.docx
 
 # Exercise solutions #
 solution/
