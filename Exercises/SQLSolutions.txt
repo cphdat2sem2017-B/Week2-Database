@@ -85,9 +85,10 @@ from products;
 
 GROUP BY
 /* 1 */
-select productLine, avg(MSRP)
-from products
-group by productLine;
+select productName, max(MSRP-buyPrice) as maximum from products group by MSRP-buyPrice desc limit 1;
+
+/* 1 */
+SELECT *, (MSRP-buyPrice) as maxProfit FROM products WHERE (MSRP-buyPrice) = (SELECT MAX(MSRP-buyPrice) FROM products);
 
 /* 2 */
 select productVendor, count(productCode)
@@ -108,3 +109,88 @@ group by status;
 select customerNumber, count(*)
 from orders
 group by customerNumber;
+
+SELECT (MANY)
+/* 1 */
+select customerName, firstName, lastName
+from customers, employees
+where employees.employeeNumber = customers.salesRepEmployeeNumber;
+
+/* 2 */
+select customerName, firstName, lastName
+from customers, employees
+where employeeNumber = salesRepEmployeeNumber and country = 'Italy';
+        
+/* 3 */
+select distinct concat(firstName, ' ', lastName) as Name, country
+from customers, employees
+where employeeNumber = salesRepEmployeeNumber;
+
+/* 3 */
+select distinct country, firstName from customers inner join employees on salesRepEmployeeNumber = employeeNumber; 
+
+UPDATE
+/* 1 */
+update employees
+set lastName = 'Smith'
+where employeeNumber = 1165;
+
+/* 2 */ 
+update customers
+set contactFirstName = "Dr. Roland"
+where customerNumber = 128;
+
+/* 3 */
+update customers
+set salesRepEmployeeNumber=1702
+where country = 'Spain';
+
+/* 4 */
+update products
+set MSRP = MSRP*1.1
+where productLine = 'Motorcycles';
+
+/* 5 */
+update customers
+set addressLine2 = ''
+where addressLine2 is null;
+
+INSERT
+/* 1 */
+insert into productlines
+values ('Bicycle', 'Great cycles from yesteryears', null, null);
+
+/* 2 */
+insert into offices
+values ( 8, 'Copenhagen', '62 72 62 73', 'Samlergade 12', null, null, 
+	'Denmark', '1213', '');
+
+/* 3 */
+insert into products
+values ('S10_0001', '1940 Wilier Rare Classic Roadbike', 'Bicycle', '1:10', 
+'Vintage cycles', 'Campagnolo Cambio Corsa Shifting. Rare early frame',
+        7, 23.17, 44.98),
+        ('S10_002', '1953 Woodsie bike', 'Bicycle', '1:10',
+        'Vintage cycles', 'Model of John Finley Scotts Woodsie Bike build on a Schwinn World diamond frame',
+        12, 31.12, 55.12);
+
+DELETE
+/* 1 */
+DELETE FROM payments WHERE paymentDate < '2003-06-18';
+
+/* 2 */
+DELETE FROM customers WHERE customerNumber < 150;
+
+JOIN
+/* 1 */
+SELECT orderNumber, customerName, orderDate
+FROM orders
+INNER JOIN customers
+ON orders.customerNumber=customers.customerNumber;
+
+/* 2 */
+SELECT customerName
+FROM orders
+RIGHT JOIN customers
+ON orders.customerNumber=customers.customerNumber
+WHERE orderNumber IS NULL;
