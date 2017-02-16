@@ -85,10 +85,14 @@ from products;
 
 GROUP BY
 /* 1 */
-select productName, max(MSRP-buyPrice) as maximum from products group by MSRP-buyPrice desc limit 1;
+select productName, max(MSRP-buyPrice) as maximum 
+from products 
+group by MSRP-buyPrice desc limit 1;
 
 /* 1 */
-SELECT *, (MSRP-buyPrice) as maxProfit FROM products WHERE (MSRP-buyPrice) = (SELECT MAX(MSRP-buyPrice) FROM products);
+select *, (MSRP-buyPrice) as maxProfit 
+from products 
+where (MSRP-buyPrice) = (select max(MSRP-buyPrice) from products);
 
 /* 2 */
 select productVendor, count(productCode)
@@ -127,7 +131,9 @@ from customers, employees
 where employeeNumber = salesRepEmployeeNumber;
 
 /* 3 */
-select distinct country, firstName from customers inner join employees on salesRepEmployeeNumber = employeeNumber; 
+select distinct country, firstName 
+from customers 
+inner join employees on salesRepEmployeeNumber = employeeNumber; 
 
 UPDATE
 /* 1 */
@@ -162,8 +168,7 @@ values ('Bicycle', 'Great cycles from yesteryears', null, null);
 
 /* 2 */
 insert into offices
-values ( 8, 'Copenhagen', '62 72 62 73', 'Samlergade 12', null, null, 
-	'Denmark', '1213', '');
+values ( 8, 'Copenhagen', '62 72 62 73', 'Samlergade 12', null, null, 'Denmark', '1213', '');
 
 /* 3 */
 insert into products
@@ -176,21 +181,21 @@ values ('S10_0001', '1940 Wilier Rare Classic Roadbike', 'Bicycle', '1:10',
 
 DELETE
 /* 1 */
-DELETE FROM payments WHERE paymentDate < '2003-06-18';
+delete from payments where paymentDate < '2003-06-18';
 
 /* 2 */
-DELETE FROM customers WHERE customerNumber < 150;
+delete customers where customerNumber < 150;
 
 JOIN
 /* 1 */
-SELECT orderNumber, customerName, orderDate
-FROM orders
-INNER JOIN customers
-ON orders.customerNumber=customers.customerNumber;
+select orderNumber, customerName, orderDate
+from orders
+inner join customers
+on orders.customerNumber=customers.customerNumber;
 
 /* 2 */
-SELECT customerName
-FROM orders
-RIGHT JOIN customers
-ON orders.customerNumber=customers.customerNumber
-WHERE orderNumber IS NULL;
+select customerName
+from orders
+right join customers
+on orders.customerNumber=customers.customerNumber
+where orderNumber is null;
