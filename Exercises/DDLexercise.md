@@ -1,6 +1,6 @@
 #DDL exercises
 ##Part 1: From database to model
-1. Look at the model in the image below
+1. Look at the model in the image below  
 ![text](../img/model.png)
 2. Write the sql to create the tables in the database as shown in the model
 3. Write sql to add the columns to create the relationships between tables
